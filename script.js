@@ -1,4 +1,18 @@
-// // Cache elements
+// Cache elements
+const header = document.getElementById('page-header');
+const footer = document.querySelector('footer');
+
+// Use parent-child-sibling relationship to navigate
+const ingredientsList = document.querySelector('#ingredients ul');
+
+// Iterate over a collection of elements
+const ingredientItems = ingredientsList.querySelectorAll('li');
+ingredientItems.forEach((item) => {
+    // Add event listeners
+    item.addEventListener('click', () => {
+        console.log('Ingredient clicked');
+    });
+});// // Cache elements
 // const header = document.getElementById('page-header');
 // const footer = document.querySelector('footer');
 
