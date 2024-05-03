@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./pexels-pixabay-208537.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+header {
+    background-color: #5a822b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
+}
+
+footer {
+    background-color: #5a822b;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ Add some bottom margin to servings section
+#servings {
+    margin-bottom: 60px;
+} 
+
+
+ Styling for the submit button
+button[type="submit"] {
+    background-color: #eeebf4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #4c701f;
+} */
+#subscribe form {
+margin-bottom: 20px;
+padding-top: 10px; 
+}
