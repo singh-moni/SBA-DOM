@@ -16,9 +16,18 @@ ingredientItems.forEach((item) => {
 // Create new button element
 const newButton = document.getElementById('newButton');
 
-// HTML templating with cloneNode
-const newInstruction = document.querySelector('#instructions ol li').cloneNode(true);
-document.querySelector('#instructions ol').appendChild(newInstruction);
+// // HTML templating with cloneNode
+// const newInstruction = document.querySelector('#ingredients ul li').cloneNode(true);
+// document.querySelector('#instructions ol').appendChild(newInstruction);
+
+// Select the 4th ingredient
+const fourthIngredient = ingredientsList.querySelectorAll('li')[3];
+
+// Clone the 4th ingredient
+const clonedIngredient = fourthIngredient.cloneNode(true);
+
+// Append the cloned ingredient to the instructions list
+document.querySelector('#instructions ol').appendChild(clonedIngredient);
 
  // Modify HTML content
  document.getElementById('introduction').textContent = 'This is a delicious recipe that you\'ll love to cook.';
