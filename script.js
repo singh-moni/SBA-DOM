@@ -15,9 +15,27 @@ ingredientItems.forEach((item) => {
 });
 // Create new button element
 const newButton = document.getElementById('newButton');
+
 // HTML templating with cloneNode
 const newInstruction = document.querySelector('#instructions ol li').cloneNode(true);
 document.querySelector('#instructions ol').appendChild(newInstruction);
+
+ // Modify HTML content
+ document.getElementById('introduction').textContent = 'This is a delicious recipe that you\'ll love to cook.';
+
+ // Modify style
+ header.addEventListener('click', () => {
+    header.style.backgroundColor = '#666';
+});
+
+// Modify attribute
+const recipeLink = document.createElement('a');
+recipeLink.textContent = 'Link to Recipe';
+recipeLink.href = 'https://themodernnonna.com/easy-homemade-pizza/';
+footer.appendChild(recipeLink);
+
+
+
 
 
 
